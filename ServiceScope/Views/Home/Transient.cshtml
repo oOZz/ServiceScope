@@ -1,0 +1,15 @@
+﻿@model string
+
+
+@{
+    ViewData["Title"] = "Transient";
+}
+@Html.ActionLink("Singleton", "Index")|
+@Html.ActionLink("Transient", "Transient")|
+@Html.ActionLink("Scoped", "Scoped")
+
+<h1>Transient</h1>
+
+
+<h2>View : @Model  </h2>
+<partial name="_Transient" />

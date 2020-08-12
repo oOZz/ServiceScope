@@ -1,0 +1,17 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.ActionLink("Singleton", "Index")|
+@Html.ActionLink("Transient", "Transient")|
+@Html.ActionLink("Scoped", "Scoped")
+
+
+<h1>Singleton</h1>
+
+
+<h2>View: @Model  </h2>
+<h3>UserManager: @ViewData["umanager"]</h3>
+<partial name="_Singleton" />
