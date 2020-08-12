@@ -19,6 +19,7 @@ namespace ServiceScope.Infrastructure
                 .As(x => x.GetInterfaces().FirstOrDefault(y => y.Name == "I" + x.Name)).SingleInstance();
 
         }
+
     }
      
 }
